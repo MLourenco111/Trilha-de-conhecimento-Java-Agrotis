@@ -1,4 +1,4 @@
-package agro.curso.javabasico.heranca_interface_polimorfismo;
+package agro.curso.javabasico.heranca_interface_polimorfismo.heranca_polimorfismo;
 
 import java.util.Arrays;
 import java.util.Objects;

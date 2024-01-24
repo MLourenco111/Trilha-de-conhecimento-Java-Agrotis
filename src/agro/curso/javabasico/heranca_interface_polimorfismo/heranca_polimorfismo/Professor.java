@@ -1,4 +1,4 @@
-package agro.curso.javabasico.heranca_interface_polimorfismo;
+package agro.curso.javabasico.heranca_interface_polimorfismo.heranca_polimorfismo;
 
 public class Professor extends Pessoa {
     private String nomeCurso;

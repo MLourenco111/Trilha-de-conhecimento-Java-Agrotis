@@ -1,4 +1,4 @@
-package agro.curso.javabasico.heranca_interface_polimorfismo;
+package agro.curso.javabasico.heranca_interface_polimorfismo.heranca_polimorfismo;
 
 public class Escola {
     public static void main(String[] args) {
