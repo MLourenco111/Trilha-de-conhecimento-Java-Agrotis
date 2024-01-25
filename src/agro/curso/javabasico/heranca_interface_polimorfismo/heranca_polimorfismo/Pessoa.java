@@ -1,6 +1,6 @@
 package agro.curso.javabasico.heranca_interface_polimorfismo.heranca_polimorfismo;
 
-public abstract class Pessoa {
+public class Pessoa {
     private String nome;
     private String endereco;
     private String telefone;
