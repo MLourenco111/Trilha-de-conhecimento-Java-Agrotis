@@ -6,6 +6,9 @@ public abstract class ContaBancaria {
     private int numConta;
     private double saldo;
 
+    public ContaBancaria() {
+    };
+
     public ContaBancaria(String nomeCliente) {
         super();
         this.nomeCliente = nomeCliente;

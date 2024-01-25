@@ -1,26 +1,30 @@
 package agro.curso.javabasico.heranca_interface_polimorfismo.exercicios36a43;
 
-import java.util.Date;
+import java.util.Calendar;
 
 public class ContaPoupanca extends ContaBancaria {
 
-    private Date diaRendimento;
+    private int diaRendimento;
+
+    public ContaPoupanca() {
+    };
 
     public ContaPoupanca(String nomeCliente) {
         super(nomeCliente);
     }
 
-    public Date getDiaRendimento() {
+    public int getDiaRendimento() {
         return diaRendimento;
     }
 
-    public void setDiaRendimento(Date diaRendimento) {
+    public void setDiaRendimento(int diaRendimento) {
         this.diaRendimento = diaRendimento;
     }
 
     public double calcularNovoSaldo(double taxaRendimento) {
+        Calendar hoje = Calendar.getInstance();
         double valorRendimento = 0;
-        if (taxaRendimento > 0) {
+        if (this.diaRendimento == hoje.get(Calendar.DAY_OF_MONTH) && taxaRendimento > 0) {
             valorRendimento = this.getSaldo() * taxaRendimento;
             double novoSaldo = this.getSaldo() + valorRendimento;
             setSaldo(novoSaldo);

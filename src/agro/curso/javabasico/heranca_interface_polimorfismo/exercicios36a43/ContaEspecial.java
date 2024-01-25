@@ -4,6 +4,9 @@ public class ContaEspecial extends ContaBancaria {
     private double limiteFixo;
     private double limite;
 
+    public ContaEspecial() {
+    };
+
     public ContaEspecial(String nomeCliente) {
         super(nomeCliente);
         this.limiteFixo = 500;
