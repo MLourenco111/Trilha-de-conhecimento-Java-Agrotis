@@ -3,9 +3,14 @@ package agro.curso.javabasico.execoes.exercicios47a52;
 public class Contato {
     private static int contador = 0;
 
-    private String nome;
+    protected String nome;
     private String telefone;
     private int identificador;
+
+    public Contato() {
+        this.identificador = Contato.contador;
+        contador++;
+    }
 
     public Contato(String nome, String telefone) {
         super();
@@ -49,7 +54,7 @@ public class Contato {
 
     @Override
     public String toString() {
-        return "Contato [nome=" + nome + ", telefone=" + telefone + ", identifcador=" + identificador + "]";
+        return "Contato [nome=" + nome + ", telefone=" + telefone + "]";
     }
 
 }
