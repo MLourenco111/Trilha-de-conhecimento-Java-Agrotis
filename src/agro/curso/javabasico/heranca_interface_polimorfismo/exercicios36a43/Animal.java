@@ -11,23 +11,29 @@ public class Animal {
     public Animal() {
     }
 
-    public Animal(String nome, double comprimento, int qtdPatas, String cor, String ambiente, double velocidade) {
+    public Animal(String nome, double comprimento, int qtdPatas, String cor, double velocidade) {
         super();
         this.nome = nome;
         this.comprimento = comprimento;
         this.qtdPatas = qtdPatas;
         this.cor = cor;
-        this.ambiente = ambiente;
         this.velocidade = velocidade;
     }
 
-    public Animal(String nome, double comprimento, String cor, String ambiente, double velocidade) {
+    public Animal(String nome, double comprimento, int qtdPatas, double velocidade) {
+        super();
+        this.nome = nome;
+        this.comprimento = comprimento;
+        this.qtdPatas = qtdPatas;
+        this.velocidade = velocidade;
+    }
+
+    public Animal(String nome, double comprimento, String cor, double velocidade) {
         super();
         this.nome = nome;
         this.comprimento = comprimento;
         this.qtdPatas = 4;
         this.cor = cor;
-        this.ambiente = ambiente;
         this.velocidade = velocidade;
     }
 

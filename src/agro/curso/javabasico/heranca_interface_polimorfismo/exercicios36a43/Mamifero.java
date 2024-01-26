@@ -7,8 +7,9 @@ public class Mamifero extends Animal {
     public Mamifero() {
     };
 
-    public Mamifero(String nome, double comprimento, String cor, String ambiente, double velocidade) {
-        super(nome, comprimento, cor, ambiente, velocidade);
+    public Mamifero(String nome, double comprimento, String cor, double velocidade) {
+        super(nome, comprimento, cor, velocidade);
+        this.setAmbiente("Terra");
     }
 
     public String getAlimento() {

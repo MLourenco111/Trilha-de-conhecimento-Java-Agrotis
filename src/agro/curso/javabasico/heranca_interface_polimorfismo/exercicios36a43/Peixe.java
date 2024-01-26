@@ -7,9 +7,10 @@ public class Peixe extends Animal {
 
     }
 
-    public Peixe(String nome, double comprimento, int qtdPatas, String cor, String ambiente, double velocidade,
-                    String caracteristica) {
-        super(nome, comprimento, qtdPatas, cor, ambiente, velocidade);
+    public Peixe(String nome, double comprimento, int qtdPatas, String cor, double velocidade, String caracteristica) {
+        super(nome, comprimento, qtdPatas, cor, velocidade);
+        this.setAmbiente("Mar");
+        this.setCor("Cinzento");
         this.caracteristicas = caracteristica;
     }
 

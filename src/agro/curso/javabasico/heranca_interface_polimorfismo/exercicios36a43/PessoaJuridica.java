@@ -18,13 +18,6 @@ public class PessoaJuridica extends Pessoa {
     }
 
     @Override
-    public String toString() {
-        String s = super.toString();
-        s += ", cnpj=" + cnpj + ", Imposto a pagar  " + this.calcularImposto() + "]";
-        return s;
-    }
-
-    @Override
     public double calcularImposto() {
         // TODO Auto-generated method stub
         return this.getRendaBruta() * 0.10;

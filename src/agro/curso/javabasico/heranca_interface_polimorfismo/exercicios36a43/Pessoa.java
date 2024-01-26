@@ -28,9 +28,4 @@ public abstract class Pessoa {
 
     public abstract double calcularImposto();
 
-    @Override
-    public String toString() {
-        return "Pessoa [nome=" + nome + ", rendaBruta=" + rendaBruta + " ";
-    }
-
 }
