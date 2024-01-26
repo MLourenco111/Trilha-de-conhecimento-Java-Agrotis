@@ -1,16 +1,19 @@
 package agro.curso.javabasico.heranca_interface_polimorfismo.exercicios44a46;
 
 public class Cubo extends Figura3D implements DimensaoSuperficial, DimensaoVolumetrica {
+    private double area;
+    private double comprimento;
+    private double volume;
 
     @Override
     public void calcularArea() {
-        // TODO Auto-generated method stub
+        area = 6 * Math.pow(comprimento, 2);
 
     }
 
     @Override
     public void calcularVolume() {
-        // TODO Auto-generated method stub
+        volume = comprimento * comprimento * comprimento;
 
     }
 
